@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index.html</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./socket.io.js"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="chat">
+                    <div id="chat-window">
+                        <div>
+                            <input type="text" placeholder="Enter Your Name" id="name" name="text" style=" height: 40px; width: 90%; ">
+                            <button class="btn success" id="connect" >Connect</button>
+                        </div>
+                        <div class="container">
+                        <div id="output" class="item" ></div>
+                        <div id="rooms" class="item2">
+                            <p><strong>Groups</strong></p>
+                            <input type="radio" id="grp1" name="grp" value="Office">
+                            <label for="grp1">Office</label><br>
+                            <input type="radio" id="grp2" name="grp" value="College">
+                            <label for="grp22">College</label><br>  
+                            <input type="radio" id="grp3" name="grp" value="School">
+                            <label for="grp3">School</label><br><br>
+                            <button id="join" >Join</button>
+                           <br> <span id="error"></span>
+                        </div>
+                        <div id="people" class="item2">
+                            <p><strong>People Available</strong></p>
+                        </div>
+                        </div>
+                        <br><span id="error1"></span>
+                        <div id="feedback"></div>
+                    </div>
+                    <input type="text" placeholder="enter a name you want to send message" id="whom" name="text" class="show" style=" height: 40px; width: 100%; ">
+                    <!--<button class="btn success show" id="add" >Add</button>-->
+                    <input type="text" placeholder="Enter Your Message" id="msg" class="show" style="width: 100%; height: 40px;">
+                    <button class="btnSend show" id="send" >Send</button> 
+                    <input type="text" placeholder="Enter a group name" id="grpName" name="text" class="hide"  style=" height: 40px; width: 100%; ">
+                    <input type="text" placeholder="Enter Your Message" id="msgBrd" class="hide" style="width: 100%; height: 40px;"> 
+                    <button class="btnSend hide" id="broadcast" >Send</button>
+                    <button class="btnBrd" id="brd" onclick="clickMe()">Broadcast</button>   
+                    <div id="added" style=" height: 400px; width: 100%; background-color: white;"></div> 
+                    <br><span id="error1"></span>
+        </div>
+        <script src="./chat.js"></script>
+    </body>
+</html>

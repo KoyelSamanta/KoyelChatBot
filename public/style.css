@@ -1,0 +1,113 @@
+.form-container {
+    width: 1000px;
+    padding: 10px;
+    height: 100%;
+    background-color: white;
+   
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 400px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .btn {
+    width: 8%;
+    background-color: white;
+    color: black;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Green */
+  .success {
+    border-color: #04AA6D;
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .btnSend {
+    width: 100%;
+    background-color: #04AA6D;
+    color: black;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: #04AA6D;
+    color: black;
+
+  }
+  .btnBrd {
+    width: 100%;
+    background-color: #f0d85c;
+    color: black;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: #f0d85c;
+    color: black;
+
+  }
+
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #eba2ce;
+    flex-basis: 80%;
+    height: 400px;
+    margin: 5px;
+  }
+
+  .item2 {
+    background: rgb(246, 227, 227);
+    flex-basis: 20%;
+    height: 400px;
+    margin: 5px;
+  }
